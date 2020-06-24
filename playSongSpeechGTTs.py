@@ -8,7 +8,7 @@ import spotipy
 spotify = spotipy.Spotify()
 spotify.trace = False
 
-client_credentials_manager = SpotifyClientCredentials(client_id='63b5eec3be3f468084c020dff063980f', client_secret='abd1530805fb4884b3738d2f217151a6')
+client_credentials_manager = SpotifyClientCredentials(client_id='client_id', client_secret='client_secret')
 spotify = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 
 def speak(audio, fileName="tmp"):
